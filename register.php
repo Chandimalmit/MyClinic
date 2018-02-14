@@ -85,7 +85,7 @@
 
         <div class="form-group">
         	<label>Email Address</label>
-        	<input type="text" name="email" required />
+        	<input type="email" name="email" required />
         </div>
 
          <div class="form-group">

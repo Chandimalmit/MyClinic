@@ -1,4 +1,5 @@
 	<?php
+	session_start();
 	require 'includes/header.php';
 	require 'config/config.php';
 	include 'includes/header-section.php';
