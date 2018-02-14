@@ -14,8 +14,8 @@
 		<h2>Register Here</h2>
 	<form action="controllers/register_controller.php" method="post">
 		<fieldset>
+		 <div class="form-group">	
 		<label>Title</label>
-	    <div class="form-group">
 			<select name="title">
 				<option value="mr">Please Select Title</option>
 				<option value="Dr">Dr</option>
