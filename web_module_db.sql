@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 14, 2018 at 12:31 PM
+-- Generation Time: Feb 14, 2018 at 04:25 PM
 -- Server version: 10.1.30-MariaDB
--- PHP Version: 7.2.1
+-- PHP Version: 7.0.27
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -51,9 +51,9 @@ INSERT INTO `admin` (`id`, `username`, `password`, `status`, `created_at`) VALUE
 
 CREATE TABLE `user` (
   `id` int(11) NOT NULL,
-  `title` int(11) NOT NULL,
-  `firstname` int(255) NOT NULL,
-  `middlename` int(255) NOT NULL,
+  `title` varchar(11) NOT NULL,
+  `firstname` varchar(255) NOT NULL,
+  `middlename` varchar(255) NOT NULL,
   `lastname` varchar(255) NOT NULL,
   `gender` varchar(20) NOT NULL,
   `dob` date NOT NULL,
@@ -71,8 +71,9 @@ CREATE TABLE `user` (
 --
 
 INSERT INTO `user` (`id`, `title`, `firstname`, `middlename`, `lastname`, `gender`, `dob`, `nic`, `clinic_number`, `address`, `h_phone_num`, `m_phone_num`, `email_address`, `remarks`) VALUES
-(1, 0, 0, 0, 'harischandra', 'Male', '0000-00-00', '892070091v', 1, '1319/10,Wanamal Uyana, Pannipitiya', 112839499, 768320025, 'harischandrax@gmail.com', 'this is testing'),
-(2, 0, 0, 0, '', 'Male', '2018-02-14', '34434545v', 2, '1234, Galle Road, Colomo 04', 233444444, 234344343, 'isuru123@gmail.com', 'wow i like it');
+(1, '0', '0', '0', 'harischandra', 'Male', '0000-00-00', '892070091v', 1, '1319/10,Wanamal Uyana, Pannipitiya', 112839499, 768320025, 'harischandrax@gmail.com', 'this is testing'),
+(2, '0', '0', '0', '', 'Male', '2018-02-14', '34434545v', 2, '1234, Galle Road, Colomo 04', 233444444, 234344343, 'isuru123@gmail.com', 'wow i like it'),
+(4, '0', '0', '0', 'Kulathunga', 'Male', '2018-02-14', '243455555v', 4, '123, deans road', 233333321, 2147483647, 'me@gmail.com', 'test');
 
 --
 -- Indexes for dumped tables
@@ -105,7 +106,7 @@ ALTER TABLE `admin`
 -- AUTO_INCREMENT for table `user`
 --
 ALTER TABLE `user`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
