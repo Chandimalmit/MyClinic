@@ -16,6 +16,10 @@ body{
 	color: white;
 }
 
+.main-content{
+	padding: 10px;
+}
+
 .header-logo{
 	display: inline-block;
 }
@@ -44,6 +48,7 @@ body{
 
 .form-group{
 	padding: 10px;
+	float: left;
 }
 
 .search-container{

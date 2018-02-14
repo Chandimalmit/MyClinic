@@ -9,7 +9,11 @@
 	   }
 ?>
 
-<div class="container">
+<div class="main-content">
+	<div class="inline-element pull-right">
+	 		<a href="welcome.php">Go back</a> |
+	 		<a href="controllers/logout.php">Log out</a>
+	</div>
 	<div class="form-container">
 		<h2>Register Here</h2>
 	<form action="controllers/register_controller.php" method="post">
@@ -40,12 +44,14 @@
 		    <label>Last Name</label>
 			<input type="text" name="lastname" required />
         </div>
-
+        
+        <div class="form-group">
         <select name="gender" required>
            <label>Gender</label>
         	<option>Male</option>
         	<option>Female</option>
         </select> 
+    </div>
 
         <div class="form-group">
         	 <label>Date of Birth</label>
@@ -87,8 +93,9 @@
         	<textarea name="remarks"></textarea>
         </div>
 
-
-        <input type="submit" name="submit" class="btn" value="Submit" />
+        <div class="form-group">
+        	<br><br><input type="submit" name="submit" class="btn" value="Submit" />
+        </div>
       </fieldset>
 	</form>
    </div>
