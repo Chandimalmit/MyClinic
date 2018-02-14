@@ -5,10 +5,10 @@
 	?>
 	 <div class="main-content">
 	 	<div class="search-container">
-	 	<div class="inline-element">
-		 	<form method="post" action="">
-		 			<input type="text" name="keyword" placeholder="Search here by clinic Number"/>
-		 			<input type="submit" value="search">
+	 	<div class="inline-element pull-left">
+		 	<form method="post" action="" class="search-form">
+		 			<input type="text" name="keyword" placeholder="Search here by clinic Number" required/>
+		 			<input type="submit" value="search" class="btn">
 		 	</form>
 	   </div>
 	 	<div class="inline-element pull-right">
@@ -17,7 +17,7 @@
 	 		<a href="controllers/logout.php">Log out</a>
 	    </div>
 	    </div><hr>
-	    <div class="list-section">
+	    <div class="list-container">
 	    	<?php
 	    	$keyword = "";
             if ($_SERVER["REQUEST_METHOD"] == "POST") { 
@@ -26,6 +26,7 @@
                 $result = $conn->query($sql);
 
 			if ($result->num_rows > 0) { ?>
+			    <h3>Search Results For: <?php echo $keyword; ?></h3>
 				    <table>
 				    	<tr>
 				    	<th>User Id</th>

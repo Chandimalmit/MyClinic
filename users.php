@@ -31,6 +31,7 @@ if (!isset($_SESSION["login_user"]))
 
 			if ($result->num_rows > 0) { ?>
 			<div class="list-container">
+				<h3>List of All Members</h3>
 				    <table>
 				    	<tr>
 				    	<th>User Id</th>
