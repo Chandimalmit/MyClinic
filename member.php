@@ -2,6 +2,11 @@
 	require 'includes/header.php';
 	require 'config/config.php';
 	include 'includes/header-section.php';
+	if (!isset($_SESSION["login_user"]))
+	   {  
+	   	  echo $_SESSION["login_user"];
+	      header("location: index.php");
+	   }
 	?>
 	 <div class="main-content">
 	 	<div class="search-container">
