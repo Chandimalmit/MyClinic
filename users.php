@@ -3,18 +3,24 @@ session_start();
 require("includes/header.php");
 require("config/config.php");
 include 'includes/header-section.php';
+
+if (!isset($_SESSION["login_user"]))
+	   {  
+	      header("location: index.php");
+   }
 ?>
 <div class="main-content">
 	<div class="search-container">
-	 	<div class="inline-element">
+	 	<div class="inline-element pull-left">
 		 	<form method="post" action="" class="search-form">
-		 			<input type="text" name="keyword" placeholder=" Search here by clinic number" required/>
+		 			<input type="text" name="keyword" placeholder=" Search here by Clinic Number" required/>
 		 			<input type="submit" class="btn" value="Search">
 		 	</form>
 	   </div>
 	 	<div class="inline-element pull-right">
 	 		<a href="users.php">Get All Users</a> |
-	 		<a href="welcome.php">Go back</a>
+	 		<a href="welcome.php">Go back</a> |
+			<a href="controllers/logout.php">Log out</a>
 	    </div>
 	    </div><hr>
 	<?php

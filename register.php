@@ -101,6 +101,8 @@
    </div>
 
 </div>
+<div class="sticky-footer">
  <?php 
 require 'includes/footer.php';
 ?>
+</div>

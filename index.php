@@ -15,10 +15,10 @@ include 'includes/header-section.php';
                     ?>
     				<h4>Login Here</h4>
     				<div class="form-group">
-    					<input id="username" type="text" name="username">
+    					<input id="username" type="text" name="username" placeholder=" Enter Username" />
     			    </div>
     			    <div class="form-group">
-    					<input id="password" type="password" name="password">
+    					<input id="password" type="password" name="password" placeholder=" Enter Password"/>
     			    </div>
     			    <input type="submit" class="btn" name="submit">
     			</fieldset>
