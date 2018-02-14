@@ -1,0 +1,85 @@
+body{
+	margin: 0;
+} 
+
+.btn{
+	background-color: #246475;
+	padding: 10px;
+	color: white;
+	border: none;
+}
+
+.header-section{
+	text-align: center;
+	background: #246476;
+	padding: 15px;
+	color: white;
+}
+
+.header-logo{
+	display: inline-block;
+}
+
+.header-title{
+	display: inline-block;
+}
+
+.link-section{
+	position: relative;
+	top: 40px;
+	text-align: center;
+}
+
+.form-container{
+	width:33.333%;
+	margin: 0 auto;
+	position: relative;
+	top: 30px;
+	text-align: center;
+}
+
+.inline-element{
+	display: inline-block;
+}
+
+.form-group{
+	padding: 10px;
+}
+
+.search-container{
+   padding: 15px;
+   text-align: center;
+}
+
+.list-container{
+   padding: 10px;
+ 
+}
+
+.pull-right{
+   float: right;
+}
+
+.error{
+	color: red;
+}
+
+.msg{
+   text-align: center;
+}
+
+
+table, td, th {
+    border: 1px solid black;
+}
+
+footer{
+	position: absolute;
+	bottom: 0px;
+	width:100%;
+	background: #ccc9c9;
+}
+
+.footer-content{
+	text-align: center;
+}
