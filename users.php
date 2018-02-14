@@ -7,9 +7,9 @@ include 'includes/header-section.php';
 <div class="main-content">
 	<div class="search-container">
 	 	<div class="inline-element">
-		 	<form method="post" action="">
-		 			<input type="text" name="keyword" placeholder="search here" required/>
-		 			<input type="submit" value="search">
+		 	<form method="post" action="" class="search-form">
+		 			<input type="text" name="keyword" placeholder=" Search here by clinic number" required/>
+		 			<input type="submit" class="btn" value="Search">
 		 	</form>
 	   </div>
 	 	<div class="inline-element pull-right">

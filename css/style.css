@@ -42,6 +42,11 @@ body{
 	text-align: center;
 }
 
+.search-form input:not([type="submit"]){
+	height: 30px;
+	width: 250px;
+}
+
 .inline-element{
 	display: inline-block;
 }
