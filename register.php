@@ -46,12 +46,12 @@
         </div>
         
         <div class="form-group">
-        <select name="gender" required>
-           <label>Gender</label>
-        	<option>Male</option>
-        	<option>Female</option>
-        </select> 
-    </div>
+        	<label>Gender</label>
+	        <select name="gender" required>
+	        	<option>Male</option>
+	        	<option>Female</option>
+	        </select> 
+        </div>
 
         <div class="form-group">
         	 <label>Date of Birth</label>
