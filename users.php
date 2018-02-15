@@ -11,12 +11,12 @@ if (!isset($_SESSION["login_user"]))
 ?>
 <div class="main-content">
 	<div class="search-container">
-	 	<div class="inline-element pull-left">
+	 	<!--<div class="inline-element pull-left">
 		 	<form method="post" action="" class="search-form">
 		 			<input type="text" name="keyword" placeholder=" Search here by Clinic Number" required/>
 		 			<input type="submit" class="btn" value="Search">
 		 	</form>
-	   </div>
+	   </div>-->
 	 	<div class="inline-element pull-right">
 	 		<a href="users.php">Get All Users</a> |
 	 		<a href="welcome.php">Go back</a> |
