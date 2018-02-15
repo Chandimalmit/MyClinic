@@ -75,12 +75,12 @@
 
          <div class="form-group">
         	<label class="pull-left">Home Phone Number</label>
-        	<input type="text" name="home_phone_number" />
+        	<input type="text" name="home_phone_number" pattern='[\+]\d{2}[\(]\d{2}[\)]\d{4}[\-]\d{4}' />
         </div>
 
         <div class="form-group">
         	<label class="pull-left">Mobile Phone Number</label>
-        	<input type="text" name="mobile_form_number" />
+        	<input type="text" name="mobile_form_number" pattern='[\+]\d{2}[\(]\d{2}[\)]\d{4}[\-]\d{4}' />
         </div> 
 
         <div class="form-group">
