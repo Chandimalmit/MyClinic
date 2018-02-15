@@ -11,6 +11,7 @@ if (!isset($_SESSION["login_user"]))
 ?>
 <div class="main-content">
 	<div class="search-container">
+	<h3 class="inline-element pull-left">List of All Members</h3>
 	 	<!--<div class="inline-element pull-left">
 		 	<form method="post" action="" class="search-form">
 		 			<input type="text" name="keyword" placeholder=" Search here by Clinic Number" required/>
